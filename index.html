@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erply test assignment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Invoices</h1>
+      <div class="button-group">
+        <button class="export-btn">
+          <img src="assets/arrowup.svg" alt="Export" />
+          Export
+        </button>
+
+        <button class="green-btn">
+          <img src="assets/Union.svg" alt="Plus" />
+          New
+        </button>
+
+        <button class="square-btn">
+          <img src="assets/Filter.svg" alt="Filter" />
+        </button>
+
+        <button class="square-btn">
+          <img src="assets/More.svg" alt="More" />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="invoices">
+        <div class="pagination">
+          <div class="per-page">
+            Results per page
+            <select class="wide-select">
+              <option>20</option>
+              <option>40</option>
+              <option>50</option>
+            </select>
+          </div>
+          <div class="page-nav">
+            <button class="nav-btn previous">
+              <img src="assets/ChevronLeft.svg" alt="Left arrow" />
+            </button>
+            <h3>1</h3>
+            <button class="nav-btn">
+              <img src="assets/ChevronRight.svg" alt="Left arrow" />
+            </button>
+          </div>
+          <div class="page-nav">
+            Page
+            <select class="wide-select">
+              <option>20</option>
+              <option>40</option>
+              <option>50</option>
+            </select>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th class="checkbox">
+                <label class="custom-checkbox">
+                  <input type="checkbox" checked="true" />
+                  <span class="checkmark"></span>
+                </label>
+              </th>
+              <th>Type</th>
+              <th>Date</th>
+              <th>Customer</th>
+              <th>Location</th>
+              <th>State</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="align-center">
+                <input type="checkbox" class="select" />
+              </td>
+              <td>
+                <div class="cell-col type">Receipt<span>#100048</span></div>
+              </td>
+              <td>21.10.2022</td>
+              <td>Lydia Dias</td>
+              <td>Location #12</td>
+              <td>
+                <div class="state in-progress"><span>•</span>In progress</div>
+              </td>
+              <td class="align-end">129.00 €</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="align-center">
+                <input type="checkbox" class="select" />
+              </td>
+              <td>
+                <div class="cell-col type">Receipt<span>#100048</span></div>
+              </td>
+              <td>
+                <div class="cell-col">
+                  21.10.2022<span class="warning">Due 2 days ago</span>
+                </div>
+              </td>
+              <td>Livia Siphron</td>
+              <td>Location #12</td>
+              <td>
+                <div class="state pending"><span>•</span>Pending</div>
+              </td>
+              <td class="align-end">
+                <div class="cell-col">
+                  4147.20 €<span class="warning">Unpaid 200.29 €</span>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="align-center">
+                <input type="checkbox" class="select" />
+              </td>
+              <td>
+                <div class="cell-col type">
+                  Invoice-Waybill<span>#100048</span>
+                </div>
+              </td>
+              <td>
+                <div class="cell-col">21.10.2022</div>
+              </td>
+              <td>Tatiana George</td>
+              <td>Location #12</td>
+              <td>
+                <div class="state success"><span>•</span>Success</div>
+              </td>
+              <td class="align-end">129.00 €</td>
+              <td></td>
+            </tr>
+
+            <tr class="active-row">
+              <td class="align-center">
+                <input type="checkbox" class="select" checked="true" />
+              </td>
+              <td>
+                <div class="cell-col type">
+                  Invoice-Waybill<span>#100048</span>
+                </div>
+              </td>
+              <td>
+                <div class="cell-col">21.10.2022</div>
+              </td>
+              <td>Dulce Lipshutz</td>
+              <td>Location #12</td>
+              <td>
+                <div class="state pending"><span>•</span>Complete</div>
+              </td>
+              <td class="align-end">129.00 €</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="align-center">
+                <input type="checkbox" class="select" />
+              </td>
+              <td>
+                <div class="cell-col type">
+                  Prepayment inv.<span>#100048</span>
+                </div>
+              </td>
+              <td>
+                <div class="cell-col">21.10.2022</div>
+              </td>
+              <td>Paityn Philips</td>
+              <td>Location #12</td>
+              <td>
+                <div class="state in-progress"><span>•</span>In progress</div>
+              </td>
+              <td class="align-end">129.00 €</td>
+              <td></td>
+            </tr>
+
+            <tr class="active-row">
+              <td class="align-center">
+                <input type="checkbox" class="select" checked="true" />
+              </td>
+              <td>
+                <div class="cell-col type">
+                  Prepayment inv.<span>#100048</span>
+                </div>
+              </td>
+              <td>
+                <div class="cell-col">21.10.2022</div>
+              </td>
+              <td>Jordyn Mango</td>
+              <td>Location #12</td>
+              <td>
+                <div class="state pending"><span>•</span>Pending</div>
+              </td>
+              <td class="align-end">129.00 €</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="align-center">
+                <input type="checkbox" class="select" />
+              </td>
+              <td>
+                <div class="cell-col type">Receipt<span>#100048</span></div>
+              </td>
+              <td>
+                <div class="cell-col">
+                  21.10.2022<span class="warning">Due 2 days ago</span>
+                </div>
+              </td>
+              <td>Paityn Workman</td>
+              <td>Location #12</td>
+              <td>
+                <div class="state success"><span>•</span>Success</div>
+              </td>
+              <td class="align-end">129.00 €</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="align-center">
+                <input type="checkbox" class="select" />
+              </td>
+              <td>
+                <div class="cell-col type">Receipt<span>#100048</span></div>
+              </td>
+              <td>
+                <div class="cell-col">
+                  21.10.2022<span class="warning">Due 2 days ago</span>
+                </div>
+              </td>
+              <td>Davis Dorwart</td>
+              <td>Location #12</td>
+              <td>
+                <div class="state pending"><span>•</span>Complete</div>
+              </td>
+              <td class="align-end">129.00 €</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="align-center">
+                <input type="checkbox" class="select" />
+              </td>
+              <td>
+                <div class="cell-col type">Receipt<span>#100048</span></div>
+              </td>
+              <td>
+                <div class="cell-col">21.10.2022</div>
+              </td>
+              <td>Craig Workman</td>
+              <td>Location #12</td>
+              <td>
+                <div class="state pending"><span>•</span>Complete</div>
+              </td>
+              <td class="align-end">129.00 €</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td class="align-center">
+                <input type="checkbox" class="select" />
+              </td>
+              <td>
+                <div class="cell-col type">Receipt<span>#100048</span></div>
+              </td>
+              <td>
+                <div class="cell-col">21.10.2022</div>
+              </td>
+              <td>Alfredo George</td>
+              <td>Location #12</td>
+              <td>
+                <div class="state pending"><span>•</span>Complete</div>
+              </td>
+              <td class="align-end">129.00 €</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="customers-panel">
+        <div class="title-action">
+          <h2 class="title">Customers</h2>
+          <button class="export-btn btn-default">
+            <img src="assets/User.svg" alt="Export" />
+            Add
+          </button>
+        </div>
+        <div class="alphabet">
+          <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span
+          ><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span
+          ><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span
+          ><span>P</span><span>Q</span><span>R</span><span>S</span><span>T</span
+          ><span>U</span><span>V</span><span>W</span><span>X</span><span>Y</span
+          ><span>Z</span>
+        </div>
+        <div class="search-bar">
+          <div class="search-container">
+            <span class="search-logo"
+              ><img src="assets/Search.svg" alt="Search Logo"
+            /></span>
+            <input type="text" class="search-input" placeholder="Search..." />
+          </div>
+
+          <div class="search-button-wrapper">
+            <button class="blue-btn">Search</button>
+          </div>
+        </div>
+        <ul class="customers">
+          <li><span>Marathon Oil Corp.</span></li>
+          <li><span>Sealed Air</span></li>
+          <li><span>Southern Company</span></li>
+          <li><span>Atmos Energy</span></li>
+          <li><span>Equifax Inc.</span></li>
+          <li><span>Kansas City Southern</span></li>
+          <li><span>Fidelity National Information Services</span></li>
+          <li><span>Colgate-Palmolive</span></li>
+          <li><span>Air Products & Chemicals Inc</span></li>
+          <li><span>Intuitive Surgical Inc.</span></li>
+          <li><span>Quest Diagnostics</span></li>
+          <li><span>Crown Castle International Corp.</span></li>
+          <li><span>News Corp. Class A</span></li>
+          <li><span>Federal Realty Investment Trust</span></li>
+          <li><span>Humana Inc.</span></li>
+        </ul>
+        <div class="import-customers">
+          <h2>Add customers</h2>
+          <p>
+            You can add customers by pessing the Add + button in the corner or
+            by importing your clients from a CSV file
+          </p>
+          <button class="blue-btn">
+            <img src="assets/Import.svg" />Import customers
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
