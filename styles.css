@@ -362,9 +362,10 @@ tbody{
 .type{
     line-height: 20px;
     color: #1D2433;
+    font-size: 14px;
 }
 
-.type-cell span{
+.type span{
     font-size: 10px;
     line-height: 14px;
 }
@@ -580,3 +581,12 @@ ul{
     bottom: 50%;
     transform: translateY(50%);
 }
+
+.import-customers div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
