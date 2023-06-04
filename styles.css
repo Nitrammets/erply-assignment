@@ -62,14 +62,18 @@ header button, .nav-btn, .btn-default{
     gap: 8px;
 }
 
-.green-btn{
+.add-btn{
     background: #5ABB7A;
     color: white;
     padding: 12px 16px 12px 8px;
 }
 
-.green-btn img{
+.add-btn img{
     padding: 0 4.5px;
+}
+
+.add-btn:hover{
+    background: #CBD7E5;
 }
 
 .square-btn{
@@ -85,6 +89,14 @@ header button, .nav-btn, .btn-default{
     margin: 0px 6px 0px 5px;
 }
 
+.export-btn:hover{
+    background: #004AB3;
+}
+
+.export-btn:active{
+    background: #1562CE;
+}
+
 /* Body */
 main{
     display: flex;
@@ -98,8 +110,6 @@ main{
     width: 100%;
     color: rgba(29, 36, 51, 0.8);
 }
-
-
 
 .pagination{
     height: 56px;
